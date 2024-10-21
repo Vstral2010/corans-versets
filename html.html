@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évaluation des Versets Coraniques</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Évaluez votre Utilisation des Versets Coraniques</h1>
+
+    <label for="date">Date :</label>
+    <input type="date" id="date" value="" disabled>
+
+    <div class="verse">
+        <p>إن الصلاة كانت على المومنين كتابا موقوتا</p>
+        <div class="rating">
+            <label for="rating1">Évaluation :</label>
+            <input type="number" id="rating1" min="1" max="5" placeholder="1-5">
+        </div>
+    </div>
+
+    <div class="verse">
+        <p>فاقرأوا ما تيسر من القرآن</p>
+        <div class="rating">
+            <label for="rating2">Évaluation :</label>
+            <input type="number" id="rating2" min="1" max="5" placeholder="1-5">
+        </div>
+    </div>
+
+    <div class="verse">
+        <p>استغفروا ربكم إنه كان غفاراً</p>
+        <div class="rating">
+            <label for="rating3">Évaluation :</label>
+            <input type="number" id="rating3" min="1" max="5" placeholder="1-5">
+        </div>
+    </div>
+
+    <div class="verse">
+        <p>وَالَّذِينَ يَصِلُونَ مَا أَمَرَ اللهُ بِهِ أَن يُوصَلَ</p>
+        <div class="rating">
+            <label for="rating4">Évaluation :</label>
+            <input type="number" id="rating4" min="1" max="5" placeholder="1-5">
+        </div>
+    </div>
+
+    <div class="verse">
+        <p>وَوَصَّيْنَا الْإِنْسَانَ بِوَالِدَيْهِ إحسانا</p>
+        <div class="rating">
+            <label for="rating5">Évaluation :</label>
+            <input type="number" id="rating5" min="1" max="5" placeholder="1-5">
+        </div>
+    </div>
+
+    <div class="verse">
+        <p>من ذا الذي يقرض الله قرضا حسنا</p>
+        <div class="rating">
+            <label for="rating6">Évaluation :</label>
+            <input type="number" id="rating6" min="1" max="5" placeholder="1-5">
+        </div>
+    </div>
+
+    <div class="verse">
+        <p>وأن تصوموا خير لكم إن كنتم تعلمون</p>
+        <div class="rating">
+            <label for="rating7">Évaluation :</label>
+            <input type="number" id="rating7" min="1" max="5" placeholder="1-5">
+        </div>
+    </div>
+
+    <button id="submitBtn" onclick="submitRatings()">Soumettre les Évaluations</button>
+
+    <canvas id="myChart" width="400" height="200"></canvas>
+</div>
+
+<script src="css.js"></script>
+</body>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Évaluation des Versets Coraniques</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
